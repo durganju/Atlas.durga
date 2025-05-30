@@ -1,3 +1,5 @@
 Get-Content "path\to\your\file.txt" | Measure-Object -Word
 Get-Content l1msum.txt | Measure-Object -Line -Word -Character
+Get-Content file1.txt, file2.txt | Measure-Object -Word
+
 
