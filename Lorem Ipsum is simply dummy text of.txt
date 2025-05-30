@@ -1,13 +1,1 @@
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-https://drive.google.com/drive/folders/1p0nar8-8UL70uPgB_DJFBTT503BaYzr5
-Write-Output "Hello`nWorld"
-$lorem = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.`n"
-1..100 | ForEach-Object { $lorem } | Set-Content dummy.txt
-$today = Get-Date
-$year = $today.Year
-$month = $today.Month
-[System.Globalization.CultureInfo]::CurrentCulture.Calendar.GetDaysInMonth($year, $month) | ForEach-Object {
-    "{0}/{1}/{2}" -f $month, $_, $year
-}
-
 
